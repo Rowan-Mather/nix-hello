@@ -1,6 +1,10 @@
 { nixpkgs }:
 
-nixpkgs.stdenv.mkDerivation {
+let
+  pkgs = import nixpkgs {};
+in
+
+pkgs.stdenv.mkDerivation {
   name = "hello-world";
   version = "1.0";
 
