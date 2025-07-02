@@ -17,5 +17,5 @@
           echo 'echo "Hello, World!"' >> $out/bin/hello-world
           chmod +x $out/bin/hello-world
         '';
-      }
+      };
 }
