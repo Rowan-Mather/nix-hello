@@ -1,9 +1,21 @@
 { nixpkgs }:
 
 {
-  mytest.x86_64-linux =
-    let
-      pkgs = import nixpkgs { system = "x86_64-linux"; };
-    in
-      pkgs.runCommand "hi" {} "echo hi > $out";
+  hello =
+    let pkgs = import nixpkgs {};
+    in 
+      pkgs.stdenv.mkDerivation {
+        name = "hello-world";
+        version = "1.0";
+      
+        unpackPhase = ":";
+        src = null;
+      
+        buildPhase = ''
+          mkdir -p $out/bin
+          echo '#!/bin/sh' > $out/bin/hello-world
+          echo 'echo "Hello, World!"' >> $out/bin/hello-world
+          chmod +x $out/bin/hello-world
+        '';
+      }
 }
