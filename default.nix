@@ -36,14 +36,14 @@
       
         buildPhase = ''
           mkdir -p $out/bin
-          sleep 59
+          sleep 58
           echo '#!/bin/sh' > $out/bin/hello-world
           echo 'echo "Hello, World with timer!"' >> $out/bin/hello-world
           chmod +x $out/bin/hello-world
         '';
 
         meta = {
-          timeout = null;
+          timeout = -1;
         };
       };
 
