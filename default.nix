@@ -13,7 +13,7 @@
       
         buildPhase = ''
           mkdir -p $out/bin
-          sleep 60
+          sleep 45
           echo '#!/bin/sh' > $out/bin/hello-world
           echo 'echo "Hello, World with timer!"' >> $out/bin/hello-world
           chmod +x $out/bin/hello-world
@@ -59,7 +59,7 @@
       
         buildPhase = ''
           mkdir -p $out/bin
-          sleep 60
+          sleep 45
           echo '#!/bin/sh' > $out/bin/hello-world
           echo 'echo "Hello, World"' >> $out/bin/hello-world
           chmod +x $out/bin/hello-world
