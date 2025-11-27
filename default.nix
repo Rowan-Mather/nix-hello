@@ -43,7 +43,7 @@
         '';
 
         meta = {
-          timeout = null;
+          timeout = -1;
         };
       };
 
