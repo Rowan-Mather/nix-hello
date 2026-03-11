@@ -66,7 +66,7 @@ in
     runlocally = 
       pkgs.stdenv.mkDerivation {
         name = "hello-world-local";
-        version = "1.0";
+        version = "2.0";
       
         unpackPhase = ":";
         src = null;
