@@ -1,7 +1,7 @@
 { nixpkgs }:
 
 let
-  pkgs = import nixpkgs {} 
+  pkgs = import nixpkgs {};
 in
 {
   timeout =
