@@ -101,7 +101,7 @@ in
         '';
 
         meta = {
-          requiredSystemFeatures = [ "remote-builder" ];
+          requiredSystemFeatures = [ "slan" ];
         };
   
       };
