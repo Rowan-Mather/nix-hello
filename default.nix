@@ -87,7 +87,7 @@ in
 
     runbuilder = 
       pkgs.stdenv.mkDerivation {
-        name = "hello-world-builder";
+        name = "hello-world-remote-builder";
         version = "2.0";
       
         unpackPhase = ":";
@@ -101,7 +101,7 @@ in
         '';
 
         meta = {
-          requiredSystemFeatures = [ "slan" ];
+          requiredSystemFeatures = [ "remote-builder" ];
         };
   
       };
