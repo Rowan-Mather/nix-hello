@@ -61,7 +61,6 @@ in
         echo 'echo "Hello, World"' >> $out/bin/hello-world
         chmod +x $out/bin/hello-world
       '';
-
     };
 
     runlocally = 
@@ -82,7 +81,6 @@ in
         meta = {
           requiredSystemFeatures = [ "local" ];
         };
-  
       };
 
     runbuilder = 
@@ -101,8 +99,25 @@ in
         '';
 
         meta = {
-          requiredSystemFeatures = [ "slan" ];
+          requiredSystemFeatures = [ "remote-builder" ];
         };
-  
+      };
+
+    runbuilder2 = 
+      pkgs.stdenv.mkDerivation {
+        name = "hello-world-remote-builder2";
+        version = "1.0";
+      
+        unpackPhase = ":";
+        src = null;
+      
+        buildPhase = ''
+          mkdir -p $out/bin
+          echo '#!/bin/sh' > $out/bin/hello-world
+          echo 'echo "Hello, World"' >> $out/bin/hello-world
+          chmod +x $out/bin/hello-world
+        '';
+
+        requiredSystemFeatures = [ "remote-builder" ];
       };
 }
