@@ -88,7 +88,7 @@ in
     runbuilder = 
       pkgs.stdenv.mkDerivation {
         name = "hello-world-remote-builder";
-        version = "3.0";
+        version = "2.0";
       
         unpackPhase = ":";
         src = null;
