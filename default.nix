@@ -6,7 +6,7 @@ in
 {
   timeout =
     pkgs.stdenv.mkDerivation {
-      name = "hello-world";
+      name = "hello-world-timeout";
       version = "1.2";
     
       unpackPhase = ":";
@@ -27,7 +27,7 @@ in
 
   nulltimeout =
     pkgs.stdenv.mkDerivation {
-      name = "hello-world";
+      name = "hello-world-null-timeout";
       version = "1.2";
     
       unpackPhase = ":";
