@@ -86,7 +86,7 @@ in
     runbuilder = 
       pkgs.stdenv.mkDerivation {
         name = "hello-world-remote-builder";
-        version = "2.0";
+        version = "3.0";
       
         unpackPhase = ":";
         src = null;
@@ -106,7 +106,7 @@ in
     runbuilder2 = 
       pkgs.stdenv.mkDerivation {
         name = "hello-world-remote-builder2";
-        version = "1.0";
+        version = "4.0";
       
         unpackPhase = ":";
         src = null;
