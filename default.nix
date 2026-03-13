@@ -95,7 +95,7 @@ in
           mkdir -p $out/bin
           echo "hi"
           echo '#!/bin/sh' > $out/bin/hello-world
-          echo 'echo "Hello, World"' >> $out/bin/hello-world
+          echo 'echo "Hello, World!!!!"' >> $out/bin/hello-world
           chmod +x $out/bin/hello-world
         '';
 
@@ -115,7 +115,7 @@ in
         buildPhase = ''
           mkdir -p $out/bin
           echo '#!/bin/sh' > $out/bin/hello-world
-          echo 'echo "Hello, World"' >> $out/bin/hello-world
+          echo 'echo "Hello, World!!!!"' >> $out/bin/hello-world
           chmod +x $out/bin/hello-world
         '';
 
