@@ -99,7 +99,7 @@ in
         '';
 
         meta = {
-          requiredSystemFeatures = [ "remote-builder" ];
+          requiredSystemFeatures = [ "xilinx-sdx" ];
         };
       };
 
@@ -118,6 +118,6 @@ in
           chmod +x $out/bin/hello-world
         '';
 
-        requiredSystemFeatures = [ "remote-builder" ];
+        requiredSystemFeatures = [ "xilinx-sdx" ];
       };
 }
