@@ -99,7 +99,7 @@ in
         '';
 
         meta = {
-          requiredSystemFeatures = [ "xilinx-sdx" ];
+          requiredSystemFeatures = [ "slan" ];
         };
       };
 
@@ -118,6 +118,6 @@ in
           chmod +x $out/bin/hello-world
         '';
 
-        requiredSystemFeatures = [ "xilinx-sdx" ];
+        requiredSystemFeatures = [ "slan" ];
       };
 }
