@@ -121,4 +121,18 @@ in
 
         requiredSystemFeatures = [ "remote-builder" ];
       };
+
+    long-running = 
+      pkgs.stdenv.mkDerivation {
+        name = "long-running";
+        version = "1.0";
+      
+        unpackPhase = ":";
+        src = null;
+      
+        buildPhase = ''
+          sleep 600
+          touch $out
+        '';
+      };
 }
