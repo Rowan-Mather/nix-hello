@@ -125,7 +125,7 @@ in
     long-running = 
       pkgs.stdenv.mkDerivation {
         name = "long-running";
-        version = "1.0";
+        version = "1.1";
       
         unpackPhase = ":";
         src = null;
