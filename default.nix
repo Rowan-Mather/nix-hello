@@ -7,7 +7,7 @@ in
   timeout =
     pkgs.stdenv.mkDerivation {
       name = "hello-world-timeout";
-      version = "1.4";
+      version = "1.5";
     
       unpackPhase = ":";
       src = null;
@@ -28,7 +28,7 @@ in
   nulltimeout =
     pkgs.stdenv.mkDerivation {
       name = "hello-world-null-timeout";
-      version = "1.4";
+      version = "1.5";
     
       unpackPhase = ":";
       src = null;
@@ -49,7 +49,7 @@ in
   hello =
     pkgs.stdenv.mkDerivation {
       name = "hello-world";
-      version = "1.4";
+      version = "1.5";
     
       unpackPhase = ":";
       src = null;
@@ -125,7 +125,7 @@ in
     long-running = 
       pkgs.stdenv.mkDerivation {
         name = "long-running";
-        version = "1.4";
+        version = "1.5";
       
         unpackPhase = ":";
         src = null;
