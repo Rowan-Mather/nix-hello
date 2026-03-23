@@ -7,7 +7,7 @@ in
   timeout =
     pkgs.stdenv.mkDerivation {
       name = "hello-world-timeout";
-      version = "1.11";
+      version = "1.12";
     
       unpackPhase = ":";
       src = null;
@@ -28,7 +28,7 @@ in
   nulltimeout =
     pkgs.stdenv.mkDerivation {
       name = "hello-world-null-timeout";
-      version = "1.11";
+      version = "1.12";
     
       unpackPhase = ":";
       src = null;
@@ -49,7 +49,7 @@ in
   hello =
     pkgs.stdenv.mkDerivation {
       name = "hello-world";
-      version = "1.11";
+      version = "1.12";
     
       unpackPhase = ":";
       src = null;
@@ -131,7 +131,7 @@ in
         src = null;
       
         buildPhase = ''
-          sleep 600
+          sleep 200
           touch $out
         '';
       };
